@@ -15,6 +15,7 @@ h1 {
   font-size: 42px;
   color: #373737;
   margin-bottom: 0;
+  text-align: center;
 }
 
 p {
@@ -23,6 +24,7 @@ p {
   font-size: 21px;
   margin-top: 0;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 img {
@@ -32,4 +34,23 @@ img {
 img.logo {
   width: 150px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  img.logo {
+   order: 1;
+   margin-bottom: 0;
+   margin-top: 0;
+  }
+  h1 {
+    order: 2;
+  }
+  p {
+    order: 3;
+  }
+  img {
+    order: 4;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
